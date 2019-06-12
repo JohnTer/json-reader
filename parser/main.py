@@ -3,6 +3,7 @@ from file2_reader import File2Reader
 from file3_reader import File3Reader
 from file_writter import FileWritter
 from json_validator import Validator
+from settings import *
 import os, sys
 
 class Parser(object):
@@ -78,9 +79,9 @@ class Parser(object):
 if __name__ == "__main__":
     dirname = os.path.dirname(__file__)
 
-    fname1 = os.path.join(dirname, "data/file1.json")
-    fname2 = os.path.join(dirname, "data/file2.json")
-    fname3 = os.path.join(dirname, "data/file3.json")
-    oname = os.path.join(dirname, "out/out.json")
+    fname1 = os.path.join(dirname, FNAME1)
+    fname2 = os.path.join(dirname, FNAME2)
+    fname3 = os.path.join(dirname, FNAME3)
+    oname = os.path.join(dirname, OUTNAME)
 
     Parser(fname1, fname2, fname3, oname).run()
