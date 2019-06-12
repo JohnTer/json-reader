@@ -11,7 +11,7 @@ class FileWritter(object):
 
     def stop_write(self):
         with open(self.filename, "rb+") as f:
-            f.seek(-3, os.SEEK_END)
+            f.seek(-2, os.SEEK_END)
             f.truncate()
         with open(self.filename, "a+") as f:
             f.write('\n]')
