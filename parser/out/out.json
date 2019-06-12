@@ -1,0 +1,14 @@
+[
+{
+    "actual": "B",
+    "expected": "A",
+    "name": "Test output A",
+    "status": "fail"
+},
+{
+    "actual": "B",
+    "expected": "B",
+    "name": "Test output B",
+    "status": "success"
+
+]
